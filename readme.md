@@ -37,3 +37,8 @@ rust的编译检查非常严格（调试rust程序时有一种自嘲的说法: f
 
 标准库文档：https://doc.rust-lang.org/std/index.html （项目中如果用到不属于rust标准库的crate，可能无法在这里找到文档，需要Google一下）
 
+### 本仓库的目录
+
+basics.md 基本语法
+
+ownership.md 所有权与借用
