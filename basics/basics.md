@@ -4,7 +4,7 @@
 
 ### Hello world
 
-<table> <tr><th>hello.cpp</th> <th>hello.md</th></tr><tr><td>
+<table> <tr><th>hello.cpp</th> <th>hello.rs</th></tr><tr><td>
 
 ```c++
 #include<cstdio>
@@ -23,9 +23,9 @@ fn main(){//main function without explicit return type
 ```
 </td></tr></table>
 
-### Hello world
+### Scalar Variables
 
-<table> <tr><th>variables.cpp</th> <th>variables.md</th></tr><tr><td>
+<table> <tr><th>variables.cpp</th> <th>variables.rs</th></tr><tr><td>
 
 ```c++
 #include <cstddef> //size_t
@@ -55,5 +55,63 @@ fn main(){
     let ch:char = '烟';//4 byte unicode character
     println!("{} {}",ch,size_of::<char>());
 }
+```
+</td></tr></table>
+
+### loop
+
+<table> <tr><th>loop.cpp</th> <th>loop.rs</th></tr><tr><td>
+
+```c++
+#include<cstdio>
+#include<vector>
+int main(){
+    int countdown = 10;
+    while(countdown!=0){
+        countdown--;
+        printf("%d\n",countdown);
+    }
+    std::vector<int> A = {1,2,3,4,5};
+    for(auto a:A){
+        printf("%d\n",a);
+    }
+    for(int i=0;i<7;++i){
+        printf("%d\n",i);
+    }
+    return 0;
+}
+```
+</td><td>
+
+```rust
+fn main(){
+    let mut countdown = 10;
+    while countdown!=0{
+        countdown -= 1;
+        println!("{}",countdown);
+    }
+    let A:[i32;5] = [1,2,3,4,5];//rust array
+    for a in A.iter(){
+        println!("{}",a);
+    }
+    for i in(0..7){//similar to python range(0,7)
+        println!("{}",i);
+    }
+}
+```
+</td></tr></table>
+
+
+### todo
+
+<table> <tr><th>todo.cpp</th> <th>todo.rs</th></tr><tr><td>
+
+```c++
+
+```
+</td><td>
+
+```rust
+
 ```
 </td></tr></table>
