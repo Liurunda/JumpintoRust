@@ -101,6 +101,54 @@ fn main(){
 ```
 </td></tr></table>
 
+### if
+
+<table> <tr><th>if.cpp</th> <th>if.rs</th></tr><tr><td>
+
+```c++
+#include<cstdio>
+int main(){
+    int a = 1, b = 2;
+    if(a<b){
+        printf("a<b\n");
+    }else if(a==b){
+        printf("a==b\n");
+    }else{
+        printf("a>b\n");
+    }
+    int abs = 0;
+    if(a-b<0){
+        abs = b-a;
+    }else{
+        abs = a-b;
+    }
+    printf("abs of a-b is %d\n", abs);
+    return 0;
+}
+```
+</td><td>
+
+```rust
+fn main(){
+    let a = 1;
+    let b = 2;
+    if a<b {
+        println!("a<b");
+    }else if a==b {
+        println!("a==b");
+    }else{
+        println!("a>b");
+    }
+    let abs = 
+    if a-b<0 {
+        b-a
+    }else{
+        a-b
+    };//rust if/else statement has "return value"
+    println!("abs of a-b is {}", abs);
+}
+```
+</td></tr></table>
 
 ### todo
 
