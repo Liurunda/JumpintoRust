@@ -31,6 +31,8 @@ rust的编译检查非常严格（调试rust程序时有一种自嘲的说法: f
 
 或者，阅读 [Rust by Examples](https://doc.rust-lang.org/rust-by-example/hello/print.html)中的大量例程。
 
+或者，学习一份非常有趣的教程：https://rust-unofficial.github.io/too-many-lists/ 解决rust初学者面临的一大挑战“如何用rust写个链表”，同时理解rust的诸多核心机制。
+
 成熟的项目通常已经有完善的编译脚本，如果你更想专注于语言本身，可以考虑第一次阅读时跳过关于cargo的部分，之后结合项目的编译脚本来理解cargo的用法。
 
 如果你感觉基本语法不必花太多时间了解，至少仔细阅读第四章关于“所有权”的部分。然后可以在阅读代码时，哪里不懂搜哪里。
