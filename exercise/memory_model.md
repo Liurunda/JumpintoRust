@@ -195,3 +195,11 @@ int main(){
     int b[5] = {1,2,3,4,5};
 }
 ```
+
+5.分别在`Debug`和`Release`模式下编译运行下面这段代码, 尝试解释结果。
+```rust
+fn main() {
+    let c = Box::new([0u32; 10_000_000]);
+    println!("{}", c.len());
+}
+```
